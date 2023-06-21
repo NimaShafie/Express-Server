@@ -14,7 +14,8 @@
   <h3 align="center">Demo Node JS (Express)</h3>
 
   <p align="center">
-    A project that demonstrates the following: Node JS, Express, PHP, MySQL, JQuery
+    A project that demonstrates the following: Node JS, Express, PHP, MySQL, JQuery<br />
+    Better put, an example of a MERN stack (MySQL, Express, React, Node.js)
 </div>
 
 
@@ -63,8 +64,6 @@ Frontend (Client-Side):
 * HTML5
 * CSS3
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 <!-- ## Getting Started
 
@@ -99,16 +98,16 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-
-
-<!-- USAGE EXAMPLES
+<!-- USAGE EXAMPLES -->
 ## Usage
+How to locally run the application on your own computer
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+To run the server
+```
+set DEBUG=myapp:* & npm start
+```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
@@ -182,7 +181,7 @@ Use this space to list resources you find helpful and would like to give credit 
 * [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

@@ -8,7 +8,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/NimaShafie/nodejs-express">
-    <img src="images/Node.js_logo.svg" alt="Logo" width="124" height="124">
+    <img src="public/images/Node.js_logo.svg" alt="Logo" width="124" height="124">
   </a>
 
   <h3 align="center">Demo Node JS (Express)</h3>

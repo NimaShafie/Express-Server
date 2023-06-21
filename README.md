@@ -49,20 +49,22 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-This project has been created to showcase the features and working integrations of the following programming stacks.
+This project has been created to showcase the Full-Stack features and working integrations of the following programming stacks.
+
+*Links route to the tool basics webpage*
 
 Backend (Server-Side):
-* PHP
-* Node.js (JavaScript Runtime - Backend Server Environment)
-* Express (Node.js Web Framework)
-* EJS (Templating Language)
-* Sass (CSS Preprocessors)
+* [PHP](https://www.php.net/manual/en/)
+* [Node.js](https://nodejs.org/docs/latest-v18.x/api/) (JavaScript Runtime - Backend Server Environment)
+* [Express](https://expressjs.com/en/guide/routing.html) (Node.js Web Framework)
+* [EJS](https://ejs.co/#docs) (Templating Language)
+* [Sass](https://sass-lang.com/guide) (CSS Preprocessors)
 
 Frontend (Client-Side):
-* JavaScript
-* JQuery (JS Library)
-* HTML5
-* CSS3
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [JQuery](https://api.jquery.com/) (JS Library)
+* [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 <!-- GETTING STARTED -->
 <!-- ## Getting Started
@@ -103,12 +105,20 @@ _Below is an example of how you can instruct your audience on installing and set
 How to locally run the application on your own computer
 
 To run the server
+(Uses Node.js and Express)
 ```
 set DEBUG=myapp:* & npm start
 ```
 
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+To generate css from sass
 
+Takes the sass file located in the first location after the keyword sass eg(source/stylesheets/index.scss) and generate the following css code in the next second location parameter eg(build/stylesheets/index.css)
+```
+sass source/stylesheets/index.scss build/stylesheets/index.css
+```
+
+
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 <!-- ROADMAP -->

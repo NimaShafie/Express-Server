@@ -45,8 +45,6 @@
     <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ol>
 </details>
-<br />
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -73,12 +71,8 @@ Frontend (Client-Side):
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites (Windows)
 [Node Package Manager](https://nodejs.org/en) (NPM)
-<br />
 Download the LTS version
 
 
@@ -86,7 +80,6 @@ Download the LTS version
   ```sh
   npm install npm@latest -g
   ```
-<br />
 
 ### Installation
 
@@ -100,8 +93,6 @@ Follow the steps below in order to install the repo onto your machine locally
    ```sh
    npm install
    ```
-<br />
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -114,18 +105,13 @@ To run the server
 set DEBUG=myapp:* & npm start
 ```
 Head over to your favorite web browser and open the following address
-<br />
 `http://localhost:3000/`
-<br />
 
 ### 2. Running via Docker
 If you already have Docker Desktop installed and would like to run the application using docker follow below
-<br />
 Summarized from official Node.js [docs](https://nodejs.org/en/docs/guides/nodejs-docker-webapp)
-<br />
 
 Build the docker image using the `docker build` command
-<br />
 *Replace `<your username>` with your username using all lowercase characters*
 ```
 docker build . -t <your username>/nodejs-express-app
@@ -135,10 +121,7 @@ Run the docker container by using the command below
 docker run -p 49160:3000 -d <your username>/nodejs-express-app
 ```
 Head over to your favorite web browser and open the following address
-<br />
 `http://localhost:49160/`
-<br />
-<br />
 
 ### Terminate via Docker
 We must first obtain the container ID in order to terminate the app, we can do that by running the following command
@@ -148,32 +131,22 @@ docker ps
 Find and copy the docker ID displayed from the first column which should be a series of chars like the following `30b03e042dfb`
 
 To shut down the docker app, we use the `kill` command and specify the docker ID
-<br />
 *Note: you can just specify the first 5 characters of the ID as long as you don't have any other apps running with a similiar ID*
-<br />
-<br />
 *Replace <container id> with your container id, which will always be different*
 ```
 docker kill <container id>
 ```
 *`"docker kill 30b03"` will kill my app with the ID posted above*
 
-<br />
-
-
 <!-- ROADMAP -->
 ## Development
 If you would like to alter/development more for this project, here are some instructions on how to make certain changes
-<br />
-
 To generate css from sass
 
 Takes the sass file located in the first location after the keyword sass eg(source/stylesheets/index.scss) and generate the following css code in the next second location parameter eg(build/stylesheets/index.css)
 ```
 sass source/stylesheets/index.scss build/stylesheets/index.css
 ```
-
-<br />
 
 <!-- ROADMAP -->
 ## Roadmap

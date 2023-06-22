@@ -15,12 +15,12 @@
 
   <p align="center">
     A project that demonstrates the following: Node JS, Express, PHP, MySQL, JQuery<br />
-    Better put, an example of a MERN stack (MySQL, Express, React, Node.js)
+    Better put, an example of a modified MERN stack (MySQL, Express, React, Node.js)
 </div>
 
 
 <!-- TABLE OF CONTENTS -->
-<!-- <details>
+<details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -34,14 +34,18 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+      <ul>
+        <li><a href="#running-via-docker">Running Via Docker</a></li>
+        <li><a href="#terminate-via-docker">Terminate Via Docker</a></li>
+      </ul>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#development">Development</a></li>
+    <!-- <li><a href="#license">License</a></li> -->
+    <!-- <li><a href="#contact">Contact</a></li> -->
+    <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ol>
 </details>
-<br /> -->
+<br />
 
 
 <!-- ABOUT THE PROJECT -->
@@ -67,41 +71,41 @@ Frontend (Client-Side):
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 <!-- GETTING STARTED -->
-<!-- ## Getting Started
+## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prerequisites (Windows)
+[Node Package Manager](https://nodejs.org/en) (NPM)
+<br />
+Download the LTS version
 
-This is an example of how to list things you need to use the software and how to install them.
+
 * npm
   ```sh
   npm install npm@latest -g
   ```
+<br />
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+Follow the steps below in order to install the repo onto your machine locally
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/NimaShafie/nodejs-express.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+<br />
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+### 1. Running via Locally
 How to locally run the application on your own computer
 
 To run the server
@@ -109,6 +113,58 @@ To run the server
 ```
 set DEBUG=myapp:* & npm start
 ```
+Head over to your favorite web browser and open the following address
+<br />
+`http://localhost:3000/`
+<br />
+
+### 2. Running via Docker
+If you already have Docker Desktop installed and would like to run the application using docker follow below
+<br />
+Summarized from official Node.js [docs](https://nodejs.org/en/docs/guides/nodejs-docker-webapp)
+<br />
+
+Build the docker image using the `docker build` command
+<br />
+*Replace `<your username>` with your username using all lowercase characters*
+```
+docker build . -t <your username>/nodejs-express-app
+```
+Run the docker container by using the command below
+```
+docker run -p 49160:3000 -d <your username>/nodejs-express-app
+```
+Head over to your favorite web browser and open the following address
+<br />
+`http://localhost:49160/`
+<br />
+<br />
+
+### Terminate via Docker
+We must first obtain the container ID in order to terminate the app, we can do that by running the following command
+```
+docker ps
+```
+Find and copy the docker ID displayed from the first column which should be a series of chars like the following `30b03e042dfb`
+
+To shut down the docker app, we use the `kill` command and specify the docker ID
+<br />
+*Note: you can just specify the first 5 characters of the ID as long as you don't have any other apps running with a similiar ID*
+<br />
+<br />
+*Replace <container id> with your container id, which will always be different*
+```
+docker kill <container id>
+```
+*`"docker kill 30b03"` will kill my app with the ID posted above*
+
+<br />
+
+
+<!-- ROADMAP -->
+## Development
+If you would like to alter/development more for this project, here are some instructions on how to make certain changes
+<br />
 
 To generate css from sass
 
@@ -117,24 +173,19 @@ Takes the sass file located in the first location after the keyword sass eg(sour
 sass source/stylesheets/index.scss build/stylesheets/index.css
 ```
 
-
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
+<br />
 
 <!-- ROADMAP -->
-<!-- ## Roadmap
+## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] Add Readme
+- [x] Configure Node.js and Express
+- [x] Configure Dockerfile
+- [ ] Setup MySQL database
+- [ ] Setup and configure automated testing
+- [ ] Think of more things to add to the roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+See the [open issues](https://github.com/NimaShafie/nodejs-express/issues) for a full list of proposed features (and known issues).
 
 
 
@@ -153,8 +204,6 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-
 
 <!-- LICENSE -->
 <!-- ## License

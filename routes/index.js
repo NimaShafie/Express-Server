@@ -16,21 +16,4 @@ router.get('/test', (req, res) => {
   res.render('test', { test: 'testing' })
 });
 
-// router.get('/', (req, res) => {
-//   res.send("Testing world!");
-// });
-
-/* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('index', { title: 'Express' });
-//   res.send("Testing world!");
-// });
-
-// console.log("does this come out?");
-// app.use(express.static('routes'));
-
-// router.get('/', (req, res) => {
-//   res.render('test', { test: 'testing' });
-// });
-
 module.exports = router;

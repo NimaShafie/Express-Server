@@ -145,7 +145,7 @@ To generate css from sass
 
 Takes the sass file located in the first location after the keyword sass eg(source/stylesheets/index.scss) and generate the following css code in the next second location parameter eg(build/stylesheets/index.css)
 ```
-sass source/stylesheets/index.scss build/stylesheets/index.css
+sass stylesheets/index.scss stylesheets/index.css
 ```
 
 <!-- ROADMAP -->

@@ -25,3 +25,7 @@ con.connect((err) => {
     console.log("From database, result: " + JSON.stringify(result));
   });
 });
+
+// module.export = {
+
+// }

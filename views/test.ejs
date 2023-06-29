@@ -3,12 +3,25 @@
   <head>
     <title><%= test %></title>
     <link rel='stylesheet' href='/stylesheets/css/database.css' />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
   </head>
+
   <body>
     <h1><%= test %></h1>
     <p>Welcome to <%= test %> page</p>
     <p>test page text</p>
     <p>showing some yellow text below from sass</p>
     <p class="yellow">yellow text</p>
+    <button id="button">Click Me!</button>
+    <p>testing the async bored api call here.. check console log</p>
+    <%= boredAPI.boredAPIRequest() %>
+    <script>
+      console.log("running ejs function!");
+      const button = document.querySelector('button[id="button"]');
+
+      button.addEventListener(("click"), (e) => {
+          button.textContent = `Click count: ${e.detail}`;
+      });
+    </script>
   </body>
 </html>

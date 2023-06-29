@@ -154,7 +154,8 @@ sass stylesheets/index.scss stylesheets/index.css
 - [x] Add Readme
 - [x] Configure Node.js and Express
 - [x] Configure Dockerfile
-- [ ] Setup MySQL database
+- [x] Setup MySQL database
+- [ ] Setup Express & EJS Views
 - [ ] Setup and configure automated testing
 - [ ] Think of more things to add to the roadmap
 

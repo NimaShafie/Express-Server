@@ -8,6 +8,10 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var dbRouter = require('./routes/db');
 
+// get modules
+// const test = require('./public/scripts/text');
+// console.log("attempting to call the script from app.js: " + test.someText());
+
 var app = express();
 
 // set up dotenv config
@@ -22,7 +26,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use("/public/", express.static('./public/'));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/db', usersRouter);
